@@ -41,7 +41,6 @@ class PeopleController < ApplicationController
   # POST /people.xml
   def create
     @person = Person.new(params[:person])
-
     respond_to do |format|
       if @person.save
         format.html { redirect_to(@person, :notice => 'Person was successfully created.') }

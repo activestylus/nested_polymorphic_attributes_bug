@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20110227110328) do
 
   create_table "phones", :force => true do |t|
     t.string   "number"
-    t.string   "phoneable"
-    t.integer  "phone_id"
+    t.string   "phoneable_type"
+    t.integer  "phoneable_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
